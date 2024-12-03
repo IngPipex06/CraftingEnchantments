@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crafting Enchantments</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+  </head>
+
+
+<body>
+  <header class="row">
+
+    <a href="/" class="Logo row">
+      <img src="public/imgs/Logo CE - copia.jpg" alt="Logo de Crafting Enchantments" class="LogoCE" loading="lazy" width="115px">
+      <h1 class="LogoCE">Crafting <br> Enchantments</h1>
+    </a>
+    <div class="toggleMenu" onclick="toggleMenu();"></div>
+    <nav class="navigation row">
+      <ul>
+        <li> <a href="view/HTML/products.html">Mira el catálogo</a> </li>
+        <li> <a href="view/HTML/contact.html">Contáctame</a> </li>
+        <li> <a href="view/HTML/about.html">Sobre mí</a> </li>
+      </ul>
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <section class="welcome">
+      <h1 class="tituloCF">Crafting Enchantments</h1>
+      <p class="motto">Da el regalo ideal para cada ocasión</p>
+      <p class="us">¡Creamos anchetas y detalles de todo tipo a tu gusto, ideales para agradecer o sorprender a tus seres queridos!</p>
+    </section>
+
+    <section id="anchetasSection">
+      <h2>Anchetas</h2>
+      <p>Personalizalas con cualquier diseño y motivo, no importa si es para un cumpleaños, aniversario, navidad o simplemente para expresar gratitud y cariño.</p>
+
+      <div class="anchetas article-container">
+        <article>
+          <h3> Navidad </h3>
+          <img src="public/imgs/anchetaNavidad.jpg" alt="Ancheta Feliz Navidad" class="catalogueImg" loading="lazy" width="20vw">
+        </article>
+        <article>
+          <h3>Cumpleaños</h3>
+          <img src="public/imgs/anchetaCumple.jpg" alt="Ancheta Cumpleaños" class="catalogueImg" loading="lazy" width="20vw">
+        </article>
+      </div>
+
+    </section>
+
+    <section>
+
+      <h2>Otros Detalles</h2>
+      <p>Celebra cada momento con detalles personalizados y únicos.</p>
+
+      <div class="detalles article-container">
+        <article>
+          <h3>Ramos de Cumpleaños</h3>
+          <img src="public/imgs/ramoCumple.jpg" alt="Ramo personalizado de cumpleaños" class="catalogueImg" loading="lazy" width="20vw">
+        </article>
+        <article>
+          <h3>Bouquet de Flores</h3>
+          <img src="public/imgs/bouquetFlores.jpg" alt="Bouquet de flores a tu gusto" class="catalogueImg" loading="lazy" width="20vw">
+        </article>
+        <article>
+          <h3>Esculturas en arcilla</h3>
+          <img src="public/imgs/arcilla.jpg" alt="Esculturas en arcilla" class="catalogueImg" loading="lazy" width="20vw">
+        </article>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+      <p>&copy; 2024 Crafting Enchantments. Todos los derechos reservados.</p>
+  </footer>
+
+
+  <script src="view/JavaScript/app.js"></script>
+
+<!--   <script>
+    // <![CDATA[  <-- For SVG support
+    if ('WebSocket' in window) {
+      (function () {
+        function refreshCSS() {
+          var sheets = [].slice.call(document.getElementsByTagName("link"));
+          var head = document.getElementsByTagName("head")[0];
+          for (var i = 0; i < sheets.length; ++i) {
+            var elem = sheets[i];
+            var parent = elem.parentElement || head;
+            parent.removeChild(elem);
+            var rel = elem.rel;
+            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+              var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+              elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+            }
+            parent.appendChild(elem);
+          }
+        }
+        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+        var address = protocol + window.location.host + window.location.pathname + '/ws';
+        var socket = new WebSocket(address);
+        socket.onmessage = function (msg) {
+          if (msg.data == 'reload') window.location.reload();
+          else if (msg.data == 'refreshcss') refreshCSS();
+        };
+        if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+          console.log('Live reload enabled.');
+          sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+        }
+      })();
+    }
+    else {
+      console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+    }
+    // ]]>
+  </script> -->
+    
+</body>
+
+</html>

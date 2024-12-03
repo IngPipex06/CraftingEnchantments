@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang = "es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name = "viewport" content= "width= device-width, initial-scale= 1.0">
+    <title>¡Contáctame!</title>
+    <link rel="stylesheet"  href="../public/css/styles_contact.css">
+    
+</head>
+
+
+
+<body>
+
+
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="/"><img src="../imgs/LogoCE.jpeg" alt="Logo"></a>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="./about.html">Sobre nosotros</a></li>
+            <li><a href="./products.html">Nuestros Productos</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Formulario -->
+    <div class="container" >        
+
+        <form>
+    
+    
+            <div>
+            
+            <label for="Mr"> Sr.</label>
+            <input type="radio" id="Mr" name="M">
+                     
+            <label for="Mrs"> Sra.</label>
+            <input type="radio" id="Mrs" name="M">
+            <br><br>
+
+            </div>
+    
+
+            <!-- Input Name -->
+            <div>
+    
+            <label for="Name"> Ingresa tu nombre: </label>
+            <br>
+            <input type="text" id="Name" placeholder="Pepito Perez" required>
+            <span class="validty"></span>
+            <br><br>
+    
+            </div>
+    
+
+
+            <!-- Input Telephone Num -->
+            <div>
+            <label for="Telephone"> Ingresa tu número telefónico: </label>
+            <br>
+            <input type="tel" id="Telephone" placeholder="310 123 4567" required >
+            <span class="validty"></span>
+            <br><br>
+            </div>
+
+            <!-- Input Email -->
+            <div>
+    
+                <label for="Email"> Ingresa tu correo: </label>
+                <br>
+                <input type="email" id="Email" placeholder="example@gmail.com" required>
+                <br><br>
+            </div>
+        
+
+            <!-- Input T&C -->
+            <div>
+            <label for="T&C"> Quieres recibir información de nuestros productos en tu correo? </label>
+            <br>
+            <input type="checkbox" id="T&C"  required>
+            <span class="validty"></span>
+            </div>
+        
+    
+
+            <div>
+            <input type="submit">
+            </div>
+
+        </form>
+    
+    </div>
+
+
+</body>
+
+
+
+</html>
