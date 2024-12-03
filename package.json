@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "devDependencies": {
-    "stylus": "^0.64.0"
+  "dependencies": {
+    "express": "^4.21.1"
   }
 }
