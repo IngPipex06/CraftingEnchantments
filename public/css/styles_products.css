@@ -9,6 +9,19 @@
   font-style: normal;
   color: #352017;
 }
+body,
+html {
+  min-height: 100vh;
+  min-width: 100vw;
+  width: 100vw;
+  background: linear-gradient(180deg, #e5d9cd 0%, #f2e5dc 50%, #fbede2 100%);
+  background-repeat: no-repeat;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
 h1 {
   font-size: 3.141vw;
 }
@@ -57,19 +70,6 @@ footer p {
 
 --------------------------------------------------------------------
 */
-body,
-html {
-  min-height: 100vh;
-  height: auto;
-  width: 100vw;
-  background: linear-gradient(180deg, #e5d9cd 0%, #f2e5dc 50%, #fbede2 100%);
-  background-repeat: no-repeat;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-}
 .price {
   color: rgba(0,0,0,0.666);
 }
@@ -179,19 +179,25 @@ main {
   display: inline-block;
   width: 90vw;
 }
-div {
+/* div {
   display: grid;
   justify-content: space-around;
   place-items: center;
-}
-div.article-container {
+
+  div.articleContainer {
+    border-radius: 5%
+    //background: rgba(148, 116, 93, 0.1);
+  }
+  
+  &.anchetas {
+    grid-template-columns: repeat(3, 30vw);  
+  }
+  &.detalles {
+    grid-template-columns: repeat(3, 30vw);
+  }
+} */
+div.articleContainer {
   border-radius: 5%;
-}
-div.anchetas {
-  grid-template-columns: repeat(3, 30vw);
-}
-div.detalles {
-  grid-template-columns: repeat(3, 30vw);
 }
 section {
   display: flex;
@@ -352,4 +358,22 @@ footer {
   .catalogueImg {
     width: 20.615vw;
   }
+}
+.articleContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espacio entre artículos */
+}
+.articleContainer article {
+  flex: 1 1 300px; /* Ancho mínimo de los artículos */
+  max-width: 300px; /* Ancho máximo de los artículos */
+  box-sizing: border-box; /* Incluye padding y border en el ancho y alto */
+  text-align: center; /* Centra el contenido dentro de cada artículo */
+}
+.articleContainer article:nth-child(2n+1) {
+  order: 1; /* Asegura que los artículos estén centrados adecuadamente */
+}
+.articleContainer article:nth-child(2n) {
+  order: 2; /* Asegura que los artículos estén centrados adecuadamente */
 }

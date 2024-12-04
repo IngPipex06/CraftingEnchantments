@@ -19,6 +19,7 @@
 body, html {
 
   min-height: 100vh;
+  min-width: 100vw;
   height: auto;
   width: 100vw;
   
@@ -228,17 +229,25 @@ div {
   justify-content: space-around;
   place-items: center;
 
-  &.article-container {
+  &.articleContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    place-items: center;
+    width 100%;
+
     border-radius: 5%
     //background: rgba(148, 116, 93, 0.1);
   }
-  
-  &.anchetas {
-    grid-template-columns: repeat(2, 30vw);  
-  }
-  &.detalles {
-    grid-template-columns: repeat(3, 30vw);
-  }
+
+}
+
+.articleContainer article:nth-child(2n+1) {
+    order: 1; /* Asegura que los artículos estén centrados adecuadamente */
+}
+
+.articleContainer article:nth-child(2n) {
+    order: 2; /* Asegura que los artículos estén centrados adecuadamente */
 }
 
 article {
