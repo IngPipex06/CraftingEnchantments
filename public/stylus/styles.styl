@@ -18,6 +18,7 @@
 
 body, html {
 
+  min-height: 100vh;
   height: auto;
   width: 100vw;
   
@@ -74,6 +75,12 @@ p {
 
 
   }
+
+  section & {
+
+    width: 75vw;
+
+  } 
 
   footer & {
     color: #A2876F
@@ -211,8 +218,8 @@ ul {
 
 
 main {
+  flex: 1
   display: inline-block;
-  height: auto;
   width: 90vw;
 }
 
@@ -220,6 +227,11 @@ div {
   display: grid;
   justify-content: space-around;
   place-items: center;
+
+  &.article-container {
+    border-radius: 5%
+    //background: rgba(148, 116, 93, 0.1);
+  }
   
   &.anchetas {
     grid-template-columns: repeat(2, 30vw);  
@@ -232,23 +244,27 @@ div {
 article {
   display: flex;
   justify-content: center;
-  width: 16.124vw;
+  width: 20vw;
   align-items: center;
   text-align: center;
   flex-direction: column;
   margin: 3vh 0 2vh;  // top  horizontal  bottom
   box-sizing: border-box;
-  border-radius: 12.5px;
-  background-color: rgba(148, 116, 93, 0.2);
-  aspect-ratio: 9/14;
+  border-radius: 5%;
+  background-color: rgba(148, 116, 93, 0.314);
+  aspect-ratio: 9/13.5;
 }
 
 
 .catalogueImg {
-  width: 14.142vw;
+  width: 18.708vw;
   aspect-ratio: 9/12;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 5%;
+}
+
+footer {
+  margin-block: auto 1vh;  
 }
 
 
@@ -261,25 +277,11 @@ article {
 */
 
 
-
-
-/* @media screen and (max-width: 2000px) {
-
-  header {
-    height: 10vh;
-  }
-
-
-
-} */
-
-
-
 @media screen and (max-width: 900px) {
 
   .toggleMenu {
-
     background-image: url(../imgs/menu.png);
+    cursor: pointer;
     position: absolute;
     right: 7.5%;
     background-position: center;
@@ -296,7 +298,7 @@ article {
 
   .toggleMenu.active {
     background-image: url(../imgs/salir.png);
-
+    cursor: pointer;
     z-index: 1;
     position: absolute;
     right: 7.5%;
@@ -316,6 +318,7 @@ article {
 
   .navigation {
     display: flex;
+    width: 100vw;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -330,6 +333,7 @@ article {
   }
   header {
     margin-block: 10px 5vh;
+    width: 75vw;
   }
 
   .navigation.active {
@@ -339,12 +343,15 @@ article {
     max-height: 100%;
     max-width: 100%
     opacity: 1;
-    background-color: #7f0d0c ;
+    background-color: #5d493e;
     transform: scale(1, 1);
     -webkit-transform: scale(1, 1);
     -moz-transform: scale(1, 1);
     -ms-transform: scale(1, 1);
     -o-transform: scale(1, 1);
+    & a {
+      color: #efe3d6;
+    }
   }
   nav ul {
     display: flex;
@@ -354,26 +361,35 @@ article {
   }
 
   img.LogoCE {
-    width: 10.5vw;
+    width: 10.535vw;
     border-radius: 3.5px;
   }
   h1.LogoCE {
     font-size: 3.162vw;
-
-    &:hover{
-      img.LogoCE {
-        width: 10vw;
-      }
-      h1.LogoCE {
-        font-size: 1vw;
-      }
-    }
   }
+
+  a.Logo.row:hover {
+
+    img.LogoCE {
+      width: 12.247vw;
+    }
+    h1.LogoCE {
+      font-size: 3.872vw;
+    }
+
+  }
+
+
   nav a {
     font-size: 3.141vmax;
+
+    &::after {
+      background-color: #352017; 
+    }
+
   }
 
-  .catalogueImg {
+  .catalogueImg, article {
   border-radius: 5%;
   }
 
@@ -382,9 +398,31 @@ article {
 @media screen and (max-width: 600px) {
 
   img.LogoCE {
-    width: 14.142vw;
+    width: 13.228vw;
     border-radius: 2px;
   }
+  a.Logo.row:hover {
+    img.LogoCE {
+      width: 14.142vw;
+    }
+  }
+
+  article {
+
+  width: 23.352vw;
+  
+  //margin: 3vh 0 2vh;  // top  horizontal  bottom
+  
+  aspect-ratio: 8.75/13;
+  }
+
+
+  .catalogueImg {
+    width: 20.615vw;
+  }
+
+
+
 
 }
 
@@ -400,7 +438,13 @@ section {
   margin-block: 3.141vw;
 
   &.welcome {
+    min-height: 10vh;
     margin-top: 0;
   }
+
+  &.section {
+    min-height: 25vh;
+  }
+
 
 }
