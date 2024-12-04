@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
-*,
+@import 'partials/functions';
+@import 'partials/constants';
+
+
+*,  
 *::after,
 *::before {
   box-sizing: border-box;
@@ -7,7 +11,28 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  padding: 5px;
+  color: #352017;
+}
+
+
+
+body, html {
+
+  min-height: 100vh;
+  height: auto;
+  width: 100vw;
+  
+  background: linear-gradient(
+    180deg, 
+    #e5d9cd 0%,
+    #f2e5dc 50%,
+    #fbede2 100% 
+  );
+  background-repeat: no-repeat;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   align-items: center;
 }
 .price {
