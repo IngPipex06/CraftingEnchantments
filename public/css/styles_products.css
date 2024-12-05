@@ -179,23 +179,11 @@ main {
   display: inline-block;
   width: 90vw;
 }
-/* div {
+div {
   display: grid;
   justify-content: space-around;
   place-items: center;
-
-  div.articleContainer {
-    border-radius: 5%
-    //background: rgba(148, 116, 93, 0.1);
-  }
-  
-  &.anchetas {
-    grid-template-columns: repeat(3, 30vw);  
-  }
-  &.detalles {
-    grid-template-columns: repeat(3, 30vw);
-  }
-} */
+}
 div.articleContainer {
   border-radius: 5%;
 }
@@ -363,13 +351,9 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px; /* Espacio entre artículos */
 }
 .articleContainer article {
   flex: 1 1 300px; /* Ancho mínimo de los artículos */
-  max-width: 300px; /* Ancho máximo de los artículos */
-  box-sizing: border-box; /* Incluye padding y border en el ancho y alto */
-  text-align: center; /* Centra el contenido dentro de cada artículo */
 }
 .articleContainer article:nth-child(2n+1) {
   order: 1; /* Asegura que los artículos estén centrados adecuadamente */

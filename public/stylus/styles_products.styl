@@ -229,27 +229,17 @@ main {
   width: 90vw;
 }
 
-/* div {
+div {
   display: grid;
   justify-content: space-around;
   place-items: center;
 
-  div.articleContainer {
+  &.articleContainer {
     border-radius: 5%
     //background: rgba(148, 116, 93, 0.1);
   }
   
-  &.anchetas {
-    grid-template-columns: repeat(3, 30vw);  
-  }
-  &.detalles {
-    grid-template-columns: repeat(3, 30vw);
-  }
-} */
-  div.articleContainer {
-    border-radius: 5%
-    //background: rgba(148, 116, 93, 0.1);
-  }
+}
 
 section {
   display: flex;
@@ -440,11 +430,9 @@ footer {
 
   article {
 
-  width: 23.352vw;
-  
-  //margin: 3vh 0 2vh;  // top  horizontal  bottom
-  
-  aspect-ratio: 8.75/13;
+    width: 23.352vw;
+    //margin: 3vh 0 2vh;  // top  horizontal  bottom
+    aspect-ratio: 8.75/13;
   }
 
   .catalogueImg {
@@ -455,24 +443,20 @@ footer {
 
 
 .articleContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Espacio entre artículos */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .articleContainer article {
-    flex: 1 1 300px; /* Ancho mínimo de los artículos */
-    max-width: 300px; /* Ancho máximo de los artículos */
-    box-sizing: border-box; /* Incluye padding y border en el ancho y alto */
-    text-align: center; /* Centra el contenido dentro de cada artículo */
+  flex: 1 1 300px; /* Ancho mínimo de los artículos */
 }
 
 
 .articleContainer article:nth-child(2n+1) {
-    order: 1; /* Asegura que los artículos estén centrados adecuadamente */
+  order: 1; /* Asegura que los artículos estén centrados adecuadamente */
 }
 
 .articleContainer article:nth-child(2n) {
-    order: 2; /* Asegura que los artículos estén centrados adecuadamente */
+  order: 2; /* Asegura que los artículos estén centrados adecuadamente */
 }
