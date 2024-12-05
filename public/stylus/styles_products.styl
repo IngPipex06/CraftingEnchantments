@@ -73,11 +73,9 @@ p {
 
   }
 
-  section & {
-
-    width: 75vw;
-
-  } 
+  &.price{
+    font-size: 2vw
+  }
 
   footer & {
     color: #A2876F
@@ -94,6 +92,7 @@ p {
 
 .price {
   color: rgba(0,0,0,0.666);
+  
 }
 
 header {
@@ -234,12 +233,28 @@ div {
   justify-content: space-around;
   place-items: center;
 
+
   &.articleContainer {
+    display: flex;
+    width 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     border-radius: 5%
     //background: rgba(148, 116, 93, 0.1);
+
+  }
+
+  .articleContainer article:nth-child(2n+1) {
+    order: 1;
+  }
+
+  .articleContainer article:nth-child(2n) {
+    order: 2;
   }
   
 }
+
+
 
 section {
   display: flex;
@@ -268,11 +283,11 @@ article {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  margin: 3vh 0 2vh;  // top  horizontal  bottom
+  margin: 3vh 1vw 2vh;  // top  horizontal  bottom
   box-sizing: border-box;
   border-radius: 5%;
   background-color: rgba(148, 116, 93, 0.314);
-  aspect-ratio: 9/13.5;
+  aspect-ratio: 9/13;
 }
 
 
@@ -442,21 +457,6 @@ footer {
 }
 
 
-.articleContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.articleContainer article {
-  flex: 1 1 300px; /* Ancho mínimo de los artículos */
-}
-
-
-.articleContainer article:nth-child(2n+1) {
-  order: 1; /* Asegura que los artículos estén centrados adecuadamente */
-}
-
-.articleContainer article:nth-child(2n) {
-  order: 2; /* Asegura que los artículos estén centrados adecuadamente */
-}
+/* .articleContainer article {
+  flex: 1 1 300px; //Ancho mínimo de los artículos
+} */

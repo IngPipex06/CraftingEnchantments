@@ -57,8 +57,8 @@ p.us {
   width: 75%;
   font-size: 2vw;
 }
-section p {
-  width: 75vw;
+p.price {
+  font-size: 2vw;
 }
 footer p {
   color: #a2876f;
@@ -185,7 +185,17 @@ div {
   place-items: center;
 }
 div.articleContainer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   border-radius: 5%;
+}
+div .articleContainer article:nth-child(2n+1) {
+  order: 1;
+}
+div .articleContainer article:nth-child(2n) {
+  order: 2;
 }
 section {
   display: flex;
@@ -209,11 +219,11 @@ article {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  margin: 3vh 0 2vh;
+  margin: 3vh 1vw 2vh;
   box-sizing: border-box;
   border-radius: 5%;
   background-color: rgba(148,116,93,0.314);
-  aspect-ratio: 9/13.5;
+  aspect-ratio: 9/13;
 }
 .catalogueImg {
   width: 18.708vw;
@@ -347,17 +357,6 @@ footer {
     width: 20.615vw;
   }
 }
-.articleContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.articleContainer article {
-  flex: 1 1 300px; /* Ancho mínimo de los artículos */
-}
-.articleContainer article:nth-child(2n+1) {
-  order: 1; /* Asegura que los artículos estén centrados adecuadamente */
-}
-.articleContainer article:nth-child(2n) {
-  order: 2; /* Asegura que los artículos estén centrados adecuadamente */
-}
+/* .articleContainer article {
+  flex: 1 1 300px; //Ancho mínimo de los artículos
+} */
