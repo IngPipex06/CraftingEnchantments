@@ -9,19 +9,19 @@ app.use(express.static(publicPath));
  
  
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, './views/index.html'));
+    res.sendFile(path.join(__dirname, 'views/index.html'));
 });
  
 app.get('/about', (req, res) => {
-    res.sendFile(path.join(__dirname, './views/about.html'));
+    res.sendFile(path.join(__dirname, 'views/about.html'));
 });
  
 app.get('/products', (req, res) => {
-    res.sendFile(path.join(__dirname, './views/products.html'));
+    res.sendFile(path.join(__dirname, 'views/products.html'));
 });
  
 app.get('/contact', (req, res) => {
-    res.sendFile(path.join(__dirname, './views/contact.html'));
+    res.sendFile(path.join(__dirname, 'views/contact.html'));
 });
 
 app.listen(port, () => {
