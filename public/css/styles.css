@@ -13,9 +13,8 @@ body,
 html {
   min-height: 100vh;
   min-width: 100vw;
-  height: auto;
   width: 100vw;
-  background: linear-gradient(180deg, #e5d9cd 0%, #f2e5dc 50%, #fbede2 100%);
+  background: linear-gradient(180deg, #e8ded4 0%, #e8ded4 8%, #fcefe4 100%);
   background-repeat: no-repeat;
   margin: 0;
   display: flex;
@@ -29,7 +28,10 @@ h1 {
 h1.tituloCF {
   margin: 0;
 }
-h1.LogoCE {
+h2 {
+  font-size: 2.645751311064591vw;
+}
+h2.LogoCE {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,9 +39,6 @@ h1.LogoCE {
   margin: 5px;
   font-size: 2vw;
   transition: all 0.346s ease-out;
-}
-h2 {
-  font-size: 2.645751311064591vw;
 }
 h3 {
   font-size: 2.23606797749979vw;
@@ -50,7 +49,7 @@ p {
   margin: 0;
 }
 p.motto {
-  font-size: 1.732vw;
+  font-size: 2vw;
   margin-block: -1% 1.5%;
   color: #876653;
 }
@@ -61,7 +60,13 @@ p.us {
 footer p {
   color: #a2876f;
 }
-/* Nav bar */
+/*
+--------------------------------------------------------------------
+
+                      ¡¡¡¡¡HEADER!!!!! 
+
+--------------------------------------------------------------------
+*/
 header {
   display: flex;
   align-items: center;
@@ -98,13 +103,13 @@ a.Logo.row {
 a.Logo.row:hover img.LogoCE {
   width: 8.66vw;
 }
-a.Logo.row:hover h1.LogoCE {
+a.Logo.row:hover h2.LogoCE {
   font-size: 2.236vw;
   font-weight: bold;
 }
 img.LogoCE {
   width: 8.062vw;
-  border-radius: 8.5px;
+  border-radius: 8%;
   margin: 0;
   transition: all 0.346s ease-out;
 }
@@ -219,6 +224,8 @@ footer {
 @media screen and (max-width: 900px) {
   .toggleMenu {
     background-image: url("../imgs/menu.png");
+    display: flex;
+    flex-direction: column;
     cursor: pointer;
     position: absolute;
     right: 7.5%;
@@ -226,12 +233,14 @@ footer {
     background-repeat: no-repeat;
     background-size: 5vmax 5vmax; /* Ancho y alto de la imagen de fondo */
     height: 5vmax; /* Asegúrate de que el contenedor coincida con el tamaño deseado */
-    width: 5vmax;
+    width: 3vmax;
     transition: background-size 0.346s ease-out;
     -webkit-transition: background-size 0.346s ease-out;
     -moz-transition: background-size 0.346s ease-out;
     -ms-transition: background-size 0.346s ease-out;
     -o-transition: background-size 0.346s ease-out;
+    line-height: 5px;
+    font-size: 50px;
   }
   .toggleMenu.active {
     background-image: url("../imgs/salir.png");
@@ -293,33 +302,42 @@ footer {
     flex-direction: column;
   }
   img.LogoCE {
-    width: 10.535vw;
-    border-radius: 3.5px;
+    width: 12.247vw;
   }
-  h1.LogoCE {
+  h2.LogoCE {
     font-size: 3.162vw;
   }
   a.Logo.row:hover img.LogoCE {
     width: 12.247vw;
   }
-  a.Logo.row:hover h1.LogoCE {
+  a.Logo.row:hover h2.LogoCE {
     font-size: 3.872vw;
   }
   nav a {
-    font-size: 3.141vmax;
+    font-size: 3.872vmax;
   }
   nav a::after {
     background-color: #352017;
   }
-  .catalogueImg,
-  article {
-    border-radius: 5%;
+  h1 {
+    font-size: 5vw;
+  }
+  h2 {
+    font-size: 4.691vw;
+  }
+  h3 {
+    font-size: 4.472vw;
+  }
+  p {
+    font-size: 3.162vw;
+  }
+  footer {
+    color: #a2876f;
   }
 }
 @media screen and (max-width: 600px) {
   img.LogoCE {
     width: 13.228vw;
-    border-radius: 2px;
   }
   a.Logo.row:hover img.LogoCE {
     width: 14.142vw;

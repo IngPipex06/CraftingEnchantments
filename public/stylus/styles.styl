@@ -17,14 +17,13 @@ body, html {
 
   min-height: 100vh;
   min-width: 100vw;
-  height: auto;
   width: 100vw;
   
   background: linear-gradient(
     180deg, 
-    #e5d9cd 0%,
-    #f2e5dc 50%,
-    #fbede2 100% 
+    #e8ded4 0%,
+    #e8ded4 8%,
+    #fcefe4 100% 
   );
   background-repeat: no-repeat;
   margin: 0;
@@ -39,8 +38,11 @@ h1 {
   &.tituloCF {
     margin: 0;
   }
-  &.LogoCE {
+}
+h2 {
+  font-size: 2.645751311064591vw;
 
+  &.LogoCE {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,9 +52,6 @@ h1 {
     transition: all 0.346s ease-out;
   }
 }
-h2 {
-  font-size: 2.645751311064591vw;
-}
 h3 {
   font-size: 2.23606797749979vw;
   margin-block: 0 1vw; 
@@ -61,20 +60,13 @@ p {
   font-size: 2.236vw;
   margin: 0;
   &.motto {
-    font-size:  1.732vw;
-    margin-block: - 1% 1.5%;
+    font-size:  2vw;
+    margin-block: -1% 1.5%;
     color: #876653;
   }
   &.us {
-
     width: 75%;
     font-size: 2vw;    
-
-
-  }
-
-  &.exp{
-    75vw;
   }
 
   footer & {
@@ -83,7 +75,13 @@ p {
 }
  
 
-/* Nav bar */
+/*
+--------------------------------------------------------------------
+
+                      ¡¡¡¡¡HEADER!!!!! 
+
+--------------------------------------------------------------------
+*/
 
 header {
   display: flex;
@@ -127,7 +125,7 @@ a.Logo.row {
     img.LogoCE {
       width: 8.66vw;
     }
-    h1.LogoCE {
+    h2.LogoCE {
       font-size: 2.236vw;
       font-weight: bold;
     }
@@ -137,7 +135,7 @@ a.Logo.row {
 img.LogoCE {
   
   width: 8.062vw;
-  border-radius: 8.5px;
+  border-radius: 8%;
   margin: 0;
   transition: all 0.346s ease-out;
 
@@ -193,7 +191,6 @@ nav a:hover::after {
 
 
 ul {
-
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -284,6 +281,8 @@ footer {
 
   .toggleMenu {
     background-image: url(../imgs/menu.png);
+    display: flex;
+    flex-direction: column;
     cursor: pointer;
     position: absolute;
     right: 7.5%;
@@ -291,12 +290,14 @@ footer {
     background-repeat: no-repeat;
     background-size: 5vmax 5vmax; /* Ancho y alto de la imagen de fondo */
     height: 5vmax; /* Asegúrate de que el contenedor coincida con el tamaño deseado */
-    width: 5vmax;
+    width: 3vmax;
     transition: background-size 0.346s ease-out;
     -webkit-transition: background-size 0.346s ease-out;
     -moz-transition: background-size 0.346s ease-out;
     -ms-transition: background-size 0.346s ease-out;
     -o-transition: background-size 0.346s ease-out;
+    line-height: 5px;
+    font-size: 50px;
   }
 
   .toggleMenu.active {
@@ -364,10 +365,9 @@ footer {
   }
 
   img.LogoCE {
-    width: 10.535vw;
-    border-radius: 3.5px;
+    width: 12.247vw;
   }
-  h1.LogoCE {
+  h2.LogoCE {
     font-size: 3.162vw;
   }
 
@@ -376,7 +376,7 @@ footer {
     img.LogoCE {
       width: 12.247vw;
     }
-    h1.LogoCE {
+    h2.LogoCE {
       font-size: 3.872vw;
     }
 
@@ -384,7 +384,7 @@ footer {
 
 
   nav a {
-    font-size: 3.141vmax;
+    font-size: 3.872vmax;
 
     &::after {
       background-color: #352017; 
@@ -392,17 +392,31 @@ footer {
 
   }
 
-  .catalogueImg, article {
-    border-radius: 5%;
+
+
+  h1 {
+    font-size: 5vw;
+  }
+  h2 {
+    font-size: 4.691vw;
+  }
+  h3 {
+    font-size: 4.472vw;
+  }
+  p {
+    font-size: 3.162vw;
   }
 
+  footer & {
+    color: #A2876F
+  }
 }
+
 
 @media screen and (max-width: 600px) {
 
   img.LogoCE {
     width: 13.228vw;
-    border-radius: 2px;
   }
   a.Logo.row:hover {
     img.LogoCE {

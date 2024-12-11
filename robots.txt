@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /src/
+Allow: /src/HTML/
+Disallow: /node_modules/

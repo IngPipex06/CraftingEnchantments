@@ -2,7 +2,6 @@
 @import 'partials/functions';
 @import 'partials/constants';
 
-
 *,  
 *::after,
 *::before {
@@ -22,9 +21,9 @@ body, html {
   
   background: linear-gradient(
     180deg, 
-    #e5d9cd 0%,
-    #f2e5dc 50%,
-    #fbede2 100% 
+    #e8ded4 0%,
+    #e8ded4 8%,
+    #fcefe4 100% 
   );
   background-repeat: no-repeat;
   margin: 0;
@@ -39,6 +38,9 @@ h1 {
   &.tituloCF {
     margin: 0;
   }
+}
+h2 {
+  font-size: 2.645751311064591vw;
   &.LogoCE {
 
     display: flex;
@@ -50,9 +52,6 @@ h1 {
     transition: all 0.346s ease-out;
   }
 }
-h2 {
-  font-size: 2.645751311064591vw;
-}
 h3 {
   font-size: 2.23606797749979vw;
   margin-block: 0 1vw; 
@@ -60,21 +59,19 @@ h3 {
 p {
   font-size: 2.236vw;
   margin: 0;
+
   &.motto {
-    font-size:  1.732vw;
-    margin-block: - 1% 1.5%;
+    font-size:  2vw;
+    margin-block: -1% 1.5%;
     color: #876653;
   }
-  &.us {
 
-    width: 75%;
-    font-size: 2vw;    
-
-
-  }
 
   &.price{
+    color: transparent;
+    //color: rgba(0,0,0,0.666);
     font-size: 2vw
+    color: 
   }
 
   footer & {
@@ -90,10 +87,7 @@ p {
 --------------------------------------------------------------------
 */
 
-.price {
-  color: rgba(0,0,0,0.666);
-  
-}
+
 
 header {
   display: flex;
@@ -137,7 +131,7 @@ a.Logo.row {
     img.LogoCE {
       width: 8.66vw;
     }
-    h1.LogoCE {
+    h2.LogoCE {
       font-size: 2.236vw;
       font-weight: bold;
     }
@@ -147,7 +141,7 @@ a.Logo.row {
 img.LogoCE {
   
   width: 8.062vw;
-  border-radius: 8.5px;
+  border-radius: 8%;
   margin: 0;
   transition: all 0.346s ease-out;
 
@@ -203,7 +197,6 @@ nav a:hover::after {
 
 
 ul {
-
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -397,11 +390,7 @@ footer {
   }
 
   img.LogoCE {
-    width: 10.535vw;
-    border-radius: 3.5px;
-  }
-  h1.LogoCE {
-    font-size: 3.162vw;
+    width: 12.247vw;
   }
 
   a.Logo.row:hover {
@@ -409,7 +398,7 @@ footer {
     img.LogoCE {
       width: 12.247vw;
     }
-    h1.LogoCE {
+    h2.LogoCE {
       font-size: 3.872vw;
     }
 
@@ -425,17 +414,12 @@ footer {
 
   }
 
-  .catalogueImg, article {
-  border-radius: 5%;
-  }
-
 }
 
 @media screen and (max-width: 600px) {
 
   img.LogoCE {
-    width: 13.228vw;
-    border-radius: 2px;
+    width: 14.142vw;
   }
   a.Logo.row:hover {
     img.LogoCE {
