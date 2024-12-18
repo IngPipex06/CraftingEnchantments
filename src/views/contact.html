@@ -6,93 +6,62 @@
 	<meta name = "viewport" content= "width= device-width, initial-scale= 1.0">
 	<title>Contáctame</title>
 	<link rel="stylesheet"  href="css/styles_contact.css">
-    
 </head>
 
 
 
 <body>
 
+  <header class="row">
 
-	<nav class="navbar">
-			<div class="navbar-logo">
-					<a href="/"><img src="imgs/LogoCE.jpeg" alt="Logo"></a>
+    <a href="/" class="Logo row">
+      <img src="/imgs/CraftingEnchantments.png" alt="Logo de Crafting Enchantments" class="LogoCE" loading="lazy" width="115px">
+      <h2 class="LogoCE">Crafting <br> Enchantments</h2>
+    </a>
+    <div class="toggleMenu" onclick="toggleMenu();"><!-- --- --></div>
+    <nav class="navigation row">
+      <ul>
+        <li> <a href="/">Inicio</a> </li>
+        <li> <a href="/products">Mira el catálogo</a> </li>
+        <li> <a href="/about">Sobre mí</a> </li>
+      </ul>
+    </nav>
+
+  </header>
+
+	<main>
+		<h1>¡Contáctame!</h1>
+		<article>
+			<!-- <img src="/imgs/Bonita.png" alt="Manuela Rubio Velandia"> -->
+			<div class="contact">
+				<a href="https://wa.link/fw1ulo" class="contact">
+					<img class="contact icon" src="/icons/phone-call.png" alt="icono de telefono">
+					<p>(+57) 316 4705433</p>
+				</a>
 			</div>
-			<ul class="navbar-links">
-					<li><a href="/">Inicio</a></li>
-					<li><a href="/about">Sobre Mí</a></li>
-					<li><a href="/products">Mira el Catálogo</a></li>
-			</ul>
-
-	</nav>
-
-	<!-- Formulario -->
-	<div class="container" >        
-
-		<form>
-
-
-			<div>
-			
-			<label for="Mr"> Sr.</label>
-			<input type="radio" id="Mr" name="M">
-								
-			<label for="Mrs"> Sra.</label>
-			<input type="radio" id="Mrs" name="M">
-			<br><br>
-
+			<div class="contact">
+				<a href="https://www.instagram.com/crafting_encantments?igsh=OWU2bWV0N2w5cm11&utm_source=qr" class="contact">
+					<img class="contact icon" src="/icons/instagram.png" alt="icono de instagram">
+					<p>crafting_encantments</p>
+				</a>
 			</div>
-
-
-			<!-- Input Name -->
-			<div>
-
-			<label for="Name"> Ingresa tu nombre: </label>
-			<br>
-			<input type="text" id="Name" placeholder="Pepito Perez" required>
-			<span class="validty"></span>
-			<br><br>
-
+			<div class="contact">
+				<a href="https://www.facebook.com/profile.php?id=61564667949202" class="contact">
+					<img class="contact icon" src="/icons/facebook.png" alt="icono de facebook">
+					<p>Craftingenchantments</p>
+				</a>
 			</div>
+		</article>
+	</main>
 
 
-
-			<!-- Input Telephone Num -->
-			<div>
-			<label for="Telephone"> Ingresa tu número telefónico: </label>
-			<br>
-			<input type="tel" id="Telephone" placeholder="310 123 4567" required >
-			<span class="validty"></span>
-			<br><br>
-			</div>
-
-			<!-- Input Email -->
-			<div>
-
-					<label for="Email"> Ingresa tu correo: </label>
-					<br>
-					<input type="email" id="Email" placeholder="example@gmail.com" required>
-					<br><br>
-			</div>
-	
-
-			<!-- Input T&C -->
-			<div>
-			<label for="T&C"> Quieres recibir información de nuestros productos en tu correo? </label>
-			<br>
-			<input type="checkbox" id="T&C"  required>
-			<span class="validty"></span>
-			</div>
-	
+  <footer class="footer">
+      <p>&copy; 2024 Crafting Enchantments. Todos los derechos reservados.</p>
+  </footer>
 
 
-			<div>
-			<input type="submit">
-			</div>
-
-		</form>
-	
-	</div>
+  <script src="JavaScript/button.js"></script>
+  <script src="JavaScript/media.js"></script>
 
 
 </body>

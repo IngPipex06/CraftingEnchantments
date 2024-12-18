@@ -315,11 +315,14 @@ footer {
   img.LogoCE {
     width: 12.247vw;
   }
+  h2.LogoCE {
+    font-size: 3.162vw;
+  }
   a.Logo.row:hover img.LogoCE {
-    width: 12.247vw;
+    width: 15vw;
   }
   a.Logo.row:hover h2.LogoCE {
-    font-size: 3.872vw;
+    font-size: 3.4641vw;
   }
   nav a {
     font-size: 3.141vmax;
@@ -327,10 +330,28 @@ footer {
   nav a::after {
     background-color: #352017;
   }
+  h1 {
+    font-size: 5vw;
+  }
+  h2 {
+    font-size: 4.691vw;
+  }
+  h3 {
+    font-size: 4vw;
+  }
+  p {
+    font-size: 3.162vw;
+  }
+  footer {
+    color: #a2876f;
+  }
+  .hidden {
+    display: none;
+  }
 }
 @media screen and (max-width: 600px) {
   img.LogoCE {
-    width: 14.142vw;
+    width: 13.228vw;
   }
   a.Logo.row:hover img.LogoCE {
     width: 14.142vw;
@@ -343,6 +364,3 @@ footer {
     width: 20.615vw;
   }
 }
-/* .articleContainer article {
-  flex: 1 1 300px; //Ancho mínimo de los artículos
-} */

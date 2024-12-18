@@ -42,7 +42,6 @@ h1 {
 h2 {
   font-size: 2.645751311064591vw;
   &.LogoCE {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,15 +64,12 @@ p {
     margin-block: -1% 1.5%;
     color: #876653;
   }
-
-
   &.price{
     color: transparent;
     //color: rgba(0,0,0,0.666);
     font-size: 2vw
     color: 
   }
-
   footer & {
     color: #A2876F
   }
@@ -281,6 +277,7 @@ article {
   border-radius: 5%;
   background-color: rgba(148, 116, 93, 0.314);
   aspect-ratio: 9/13;
+  //flex: 1 1 300px; //Ancho mínimo de los artículos
 }
 
 
@@ -389,58 +386,48 @@ footer {
     flex-direction: column;
   }
 
-  img.LogoCE {
-    width: 12.247vw;
-  }
+
+  img.LogoCE {width: 12.247vw;}
+  h2.LogoCE {font-size: 3.162vw;}
 
   a.Logo.row:hover {
 
-    img.LogoCE {
-      width: 12.247vw;
-    }
-    h2.LogoCE {
-      font-size: 3.872vw;
-    }
+    img.LogoCE {width: 15vw;}
+    h2.LogoCE {font-size: 3.4641vw;}
 
   }
 
 
   nav a {
-    font-size: 3.141vmax;
 
-    &::after {
-      background-color: #352017; 
-    }
+    font-size: 3.141vmax;
+    &::after {background-color: #352017;}
 
   }
+
+  h1 {font-size: 5vw;}
+  h2 {font-size: 4.691vw;}
+  h3 {font-size: 4vw;}
+  p {font-size: 3.162vw;}
+
+  footer & {color: #A2876F}
+  .hidden {display: none;}
 
 }
 
 @media screen and (max-width: 600px) {
 
-  img.LogoCE {
-    width: 14.142vw;
-  }
+  img.LogoCE {width: 13.228vw;}
   a.Logo.row:hover {
-    img.LogoCE {
-      width: 14.142vw;
-    }
+    img.LogoCE {width: 14.142vw;}
   }
 
   article {
-
     width: 23.352vw;
     //margin: 3vh 0 2vh;  // top  horizontal  bottom
     aspect-ratio: 8.75/13;
   }
 
-  .catalogueImg {
-    width: 20.615vw;
-  }
+  .catalogueImg {width: 20.615vw;}
 
 }
-
-
-/* .articleContainer article {
-  flex: 1 1 300px; //Ancho mínimo de los artículos
-} */

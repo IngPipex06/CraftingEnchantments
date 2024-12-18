@@ -24,8 +24,6 @@ html {
 }
 h1 {
   font-size: 3.141vw;
-}
-h1.tituloCF {
   margin: 0;
 }
 h2 {
@@ -109,7 +107,7 @@ a.Logo.row:hover h2.LogoCE {
 }
 img.LogoCE {
   width: 8.062vw;
-  border-radius: 8%;
+  border-radius: 20%;
   margin: 0;
   transition: all 0.346s ease-out;
 }
@@ -207,7 +205,7 @@ article {
 }
 .catalogueImg {
   width: 18.708vw;
-  aspect-ratio: 9/12;
+  aspect-ratio: 3/4;
   object-fit: cover;
   border-radius: 5%;
 }
@@ -223,7 +221,7 @@ footer {
 */
 @media screen and (max-width: 900px) {
   .toggleMenu {
-    background-image: url("../imgs/menu.png");
+    background-image: url("../icons/menu.png");
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -243,7 +241,7 @@ footer {
     font-size: 50px;
   }
   .toggleMenu.active {
-    background-image: url("../imgs/salir.png");
+    background-image: url("../icons/salir.png");
     cursor: pointer;
     z-index: 1;
     position: absolute;
@@ -308,10 +306,10 @@ footer {
     font-size: 3.162vw;
   }
   a.Logo.row:hover img.LogoCE {
-    width: 12.247vw;
+    width: 15vw;
   }
   a.Logo.row:hover h2.LogoCE {
-    font-size: 3.872vw;
+    font-size: 3.4641vw;
   }
   nav a {
     font-size: 3.872vmax;
@@ -326,13 +324,16 @@ footer {
     font-size: 4.691vw;
   }
   h3 {
-    font-size: 4.472vw;
+    font-size: 4vw;
   }
   p {
     font-size: 3.162vw;
   }
   footer {
     color: #a2876f;
+  }
+  .hidden {
+    display: none;
   }
 }
 @media screen and (max-width: 600px) {

@@ -4,7 +4,9 @@
 <head>
 	<title>Crafting Enchantments | Catálogo</title>
     <link rel="stylesheet" href="css/styles_products.css">
-    <link rel="canonical" href="https://crafting-enchantments.vercel.app/products">
+    <meta property="og:site_name" content="Crafting Enchantments">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="canonical" href="https://crafting-enchantments.vercel.app/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
@@ -19,18 +21,23 @@
     <link rel="icon" type="image/png" href="img/CraftingEnchantments.png">
     <link rel="manifest" href="/icons/site.webmanifest">
     <meta property="og:title" content="Crafting Enchantments | Anchetas y Detalles Personalizados">
-    <meta property="og:description" content="Descubre anchetas y todo tipo de detalles únicos, decorados a tu gusto y hechos con amor para cualquier ocasión.">
-    <meta property="og:image" content="imgs/anchetaMeta.jpg" >
+    <meta property="og:description" content="Anchetas y detalles únicos personalizados y hechos con amor para toda ocasión.">
+    <meta property="og:image" content="https://crafting-enchantments.vercel.app/imgs/anchetaMeta.jpg">
+    <meta property="og:image:secure_url" itemprop="image" content="https://crafting-enchantments.vercel.app/imgs/anchetaMeta.jpg">
+    <meta property="og:image:type" content="image/jpg">
     <meta property="og:url" content="https://crafting-enchantments.vercel.app/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_CO">
+    <meta property="og:image:width" content="1600">
+    <meta property="og:image:height" content="1280">
+    <meta name="msapplication-TileImage" content="https://crafting-enchantments.vercel.app/imgs/CraftingEnchantments.png">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Crafting Enchantments",
         "url": "https://crafting-enchantments.vercel.app/",
-        "logo": "https://crafting-enchantments.vercel.app/assets/logo.png",
+        "logo": "https://crafting-enchantments.vercel.app/imgs/CraftingEnchantments.png",
         "description": "Crafting Enchantments ofrece anchetas personalizadas y detalles hechos a mano para cualquier ocasión.",
         "address": {
           "@type": "PostalAddress",
@@ -45,12 +52,16 @@
           "contactType": "sales"
         },
         "sameAs": [
-          "https://web.facebook.com/profile.php?id=61564667949202",
-          "https://www.instagram.com/crafting.enchantments"
+          "https://web.facebook.com/profile.php?id=61564667949202/",
+          "https://www.instagram.com/crafting_enchantments/"
         ]
       }
     </script>
-  </head>
+    <script>
+      window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
+
 </head>
 
 <body>
@@ -66,8 +77,8 @@
 	<nav class="navigation row">
 		<ul>
 			<li> <a href="/">Inicio</a> </li>
-			<li> <a href="/contact.html">Contáctame</a> </li>
-			<li> <a href="/about.html">Sobre mí</a> </li>
+			<li> <a href="/contact">Contáctame</a> </li>
+			<li> <a href="/about">Sobre mí</a> </li>
 		</ul>
 	</nav>
 
@@ -87,12 +98,12 @@
 		<div class="anchetas articleContainer">
 			<article>
 				<h3>Navideñas</h3>
-				<img src="/imgs/anchetaNavidad.jpg" alt="Ancheta Navideña" class="catalogueImg" loading="lazy" width="150vw">
+				<img src="/imgs/anchetas/anchetaNavidad.jpg" alt="Ancheta Navideña" class="catalogueImg" loading="lazy" width="150vw">
 				<p class="price">$50,000</p>
 			</article>
 			<article>
 				<h3>Cumpleaños</h3>
-				<img src="/imgs/anchetaCumple.jpg" alt="Ancheta Cumpleaños" class="catalogueImg" loading="lazy" width="150vw">
+				<img src="/imgs/anchetas/anchetaCumple.jpg" alt="Ancheta Cumpleaños" class="catalogueImg" loading="lazy" width="150vw">
 				<p class="price">$45,000</p>
 			</article>
 <!-- 			<article>
@@ -109,24 +120,70 @@
 
 	</section>
 
-	<section  class="ramos row">
+	<section>
 
-		<h2>Ramos</h2>
+		<h2>Detalles</h2>
 
-		<div class="ramos articleContainer">
+		<div class="detalles articleContainer">
 			<article>
-				<h3>Ramo de cumpleaños</h3>
-				<img src="/imgs/ramoCumple.jpg" alt="Ramo de Cumpleaños" class="catalogueImg" loading="lazy" width="150vw">
-				<p class="price">$75,000</p>
-			</article>
-<!-- 			<article>
-				<h3>Bouquet de flores</h3>
-				<img src="/imgs/bouquetFlores.jpg" alt="Bouquet de Flores" class="catalogueImg" loading="lazy" width="150vw">
+				<h3>Carta Estilo Antiguo</h3>
+				<img src="/imgs/cartas/cartaAntigua.jpg" alt="Carta con Estilo Antiguo" class="catalogueImg" loading="lazy" width="150vw">
 				<p class="price">$60,000</p>
-			</article> -->
+			</article>
+			<article>
+				<h3>Carta de Cumpleaños</h3>
+				<img src="/imgs/cartas/felizCumpleHijo.jpg" alt="Carta para Cumpleaños" class="catalogueImg" loading="lazy" width="150vw">
+				<p class="price">$60,000</p>
+			</article>
+			<article>
+				<h3>Ramo de Corazón</h3>
+				<img src="/imgs/cartas/corazonFlor.jpg" alt="Ramo de Corazón" class="catalogueImg" loading="lazy" width="150vw">
+				<p class="price">$60,000</p>
+			</article>
+			<article>
+				<h3>Carta Estilo Antiguo</h3>
+				<img src="/imgs/dibujos/sophie.jpg" alt="Carta con Estilo Antiguo " class="catalogueImg" loading="lazy" width="150vw">
+				<p class="price">$60,000</p>
+			</article>
+			<article>
+				<h3>Ramo de Corazón</h3>
+				<img src="/imgs/dibujos/howlSophie.jpg" alt="Ramo de Corazón" class="catalogueImg" loading="lazy" width="150vw">
+				<p class="price">$60,000</p>
+			</article>
 		</div>
+	</section>
 
+	<section>
 
+		<h2>Arcilla</h2>
+
+		<div class="arcilla articleContainer">
+			<article>
+				<h3>Soporte de Pinceles</h3>
+				<img src="/imgs/arcilla/resposaPinceles.jpg" alt="Resposa Pinceles" class="catalogueImg" loading="lazy" width="150vw">
+				<p class="price">$60,000</p>
+			</article>
+			<article>
+				<h3>Gato / Sirena</h3>
+				<img src="/imgs/arcilla/gatoSirena.jpg" alt="Sirena" class="catalogueImg" loading="lazy" width="150vw">
+				<p class="price">$60,000</p>
+			</article>
+			<article>
+				<h3>Porta Pinceles</h3>
+				<img src="/imgs/arcilla/gatoPortaLapices.jpg" alt="Porta Pinceles" class="catalogueImg" loading="lazy" width="150vw">
+				<p class="price">$60,000</p>
+			</article>
+			<article>
+				<h3>Vasija</h3>
+				<img src="/imgs/arcilla/totoroVasija.jpg" alt="Totoro" class="catalogueImg" loading="lazy" width="150vw">
+				<p class="price">$60,000</p>
+			</article>
+			<article>
+				<h3>Separador de Páginas</h3>
+				<img src="/imgs/arcilla/separadorLibros.jpg" alt="Separador de Páginas" class="catalogueImg" loading="lazy" width="150vw">
+				<p class="price">$60,000</p>
+			</article>
+		</div>
 
 	</section>
 
@@ -147,80 +204,7 @@
 			</article>
 		</div>
 
-
 	</section>
-
-	<section>
-
-		<h2>Arcilla</h2>
-
-		<div class="arcilla articleContainer">
-			<article>
-				<h3>Resposa Pinceles</h3>
-				<img src="/imgs/arcilla/resposaPinceles.jpg" alt="Resposa Pinceles" class="catalogueImg" loading="lazy" width="150vw">
-				<p class="price">$60,000</p>
-			</article>
-			<article>
-				<h3>Sirena</h3>
-				<img src="/imgs/arcilla/sirena.jpg" alt="Sirena" class="catalogueImg" loading="lazy" width="150vw">
-				<p class="price">$60,000</p>
-			</article>
-			<article>
-				<h3>Porta Pinceles</h3>
-				<img src="/imgs/arcilla/gatoPortaLapices.jpg" alt="Porta Pinceles" class="catalogueImg" loading="lazy" width="150vw">
-				<p class="price">$60,000</p>
-			</article>
-			<article>
-				<h3>Totoro</h3>
-				<img src="/imgs/arcilla/totoroLana.jpg" alt="Totoro" class="catalogueImg" loading="lazy" width="150vw">
-				<p class="price">$60,000</p>
-			</article>
-			<article>
-				<h3>Separador de Páginas</h3>
-				<img src="/imgs/arcilla/separadorLibros.jpg" alt="Separador de Páginas" class="catalogueImg" loading="lazy" width="150vw">
-				<p class="price">$60,000</p>
-			</article>
-		</div>
-
-
-	</section>
-
-	<section>
-
-		<h2>Detalles</h2>
-
-		<div class="detalles articleContainer">
-			<article>
-				<h3>Carta Estilo Antiguo</h3>
-				<img src="/imgs/detalles/cartaAntigua.jpg" alt="Carta con Estilo Antiguo " class="catalogueImg" loading="lazy" width="150vw">
-				<p class="price">$60,000</p>
-			</article>
-			<article>
-				<h3>Ramo de Corazón</h3>
-				<img src="/imgs/detalles/corazonFlor.jpg" alt="Ramo de Corazón" class="catalogueImg" loading="lazy" width="150vw">
-				<p class="price">$60,000</p>
-			</article>
-		</div>
-	</section>
-
-	<section>
-
-		<h2>Dibujos</h2>
-
-		<div class="detalles articleContainer">
-			<article>
-				<h3>Carta Estilo Antiguo</h3>
-				<img src="/imgs/dibujos/sophie.jpg" alt="Carta con Estilo Antiguo " class="catalogueImg" loading="lazy" width="150vw">
-				<p class="price">$60,000</p>
-			</article>
-			<article>
-				<h3>Ramo de Corazón</h3>
-				<img src="/imgs/dibujos/howlSophie.jpg" alt="Ramo de Corazón" class="catalogueImg" loading="lazy" width="150vw">
-				<p class="price">$60,000</p>
-			</article>
-		</div>
-	</section>
-
 
 	
 

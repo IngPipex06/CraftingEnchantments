@@ -35,9 +35,7 @@ body, html {
 
 h1 {
   font-size: 3.141vw;
-  &.tituloCF {
-    margin: 0;
-  }
+  margin: 0;
 }
 h2 {
   font-size: 2.645751311064591vw;
@@ -68,7 +66,6 @@ p {
     width: 75%;
     font-size: 2vw;    
   }
-
   footer & {
     color: #A2876F
   }
@@ -135,7 +132,7 @@ a.Logo.row {
 img.LogoCE {
   
   width: 8.062vw;
-  border-radius: 8%;
+  border-radius: 20%;
   margin: 0;
   transition: all 0.346s ease-out;
 
@@ -258,7 +255,7 @@ article {
 
 .catalogueImg {
   width: 18.708vw;
-  aspect-ratio: 9/12;
+  aspect-ratio: 3/4;
   object-fit: cover;
   border-radius: 5%;
 }
@@ -280,7 +277,7 @@ footer {
 @media screen and (max-width: 900px) {
 
   .toggleMenu {
-    background-image: url(../imgs/menu.png);
+    background-image: url(../icons/menu.png);
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -301,7 +298,7 @@ footer {
   }
 
   .toggleMenu.active {
-    background-image: url(../imgs/salir.png);
+    background-image: url(../icons/salir.png);
     cursor: pointer;
     z-index: 1;
     position: absolute;
@@ -364,82 +361,48 @@ footer {
     flex-direction: column;
   }
 
-  img.LogoCE {
-    width: 12.247vw;
-  }
-  h2.LogoCE {
-    font-size: 3.162vw;
-  }
+  img.LogoCE {width: 12.247vw;}
+  h2.LogoCE {font-size: 3.162vw;}
 
   a.Logo.row:hover {
 
-    img.LogoCE {
-      width: 12.247vw;
-    }
-    h2.LogoCE {
-      font-size: 3.872vw;
-    }
+    img.LogoCE {width: 15vw;}
+    h2.LogoCE {font-size: 3.4641vw;}
 
   }
 
 
   nav a {
+
     font-size: 3.872vmax;
-
-    &::after {
-      background-color: #352017; 
-    }
-
+    &::after {background-color: #352017;}
+    
   }
 
+  h1 {font-size: 5vw;}
+  h2 {font-size: 4.691vw;}
+  h3 {font-size: 4vw;}
+  p {font-size: 3.162vw;}
 
-
-  h1 {
-    font-size: 5vw;
-  }
-  h2 {
-    font-size: 4.691vw;
-  }
-  h3 {
-    font-size: 4.472vw;
-  }
-  p {
-    font-size: 3.162vw;
-  }
-
-  footer & {
-    color: #A2876F
-  }
+  footer & {color: #A2876F}
+  .hidden {display: none;}
 }
 
 
 @media screen and (max-width: 600px) {
 
-  img.LogoCE {
-    width: 13.228vw;
-  }
+  img.LogoCE {width: 13.228vw;}
   a.Logo.row:hover {
-    img.LogoCE {
-      width: 14.142vw;
-    }
+    img.LogoCE {width: 14.142vw;}
   }
 
   article {
-
     width: 23.352vw;
-  
     //margin: 3vh 0 2vh;  // top  horizontal  bottom
-  
     aspect-ratio: 8.75/13;
   }
 
-
-  .catalogueImg {
-    width: 20.615vw;
-  }
-
-
-
+  .catalogueImg {width: 20.615vw;}
 
 }
 
