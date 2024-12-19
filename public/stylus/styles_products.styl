@@ -283,13 +283,15 @@ article {
 
 .catalogueImg {
   width: 18.708vw;
-  aspect-ratio: 9/12;
+  aspect-ratio: 3/4;
   object-fit: cover;
   border-radius: 5%;
 }
 
 footer {
-  margin-block: auto 1vh;  
+  margin-block: auto 1vh; 
+  position: relative;
+  bottom: 0; 
 }
 
 
@@ -306,7 +308,7 @@ footer {
 @media screen and (max-width: 900px) {
 
   .toggleMenu {
-    background-image: url(../imgs/menu.png);
+    background-image: url(/icons/menu.png);
     cursor: pointer;
     position: absolute;
     right: 7.5%;
@@ -323,7 +325,7 @@ footer {
   }
 
   .toggleMenu.active {
-    background-image: url(../imgs/salir.png);
+    background-image: url(/icons/salir.png);
     cursor: pointer;
     z-index: 1;
     position: absolute;

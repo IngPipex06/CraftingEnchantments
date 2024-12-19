@@ -15,8 +15,8 @@ app.get('/about', (req, res) => {
     res.sendFile(path.join(__dirname, 'views/about.html'));
 });
  
-app.get('/products', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views/products.html'));
+app.get('/catalogue', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views/catalogue.html'));
 });
  
 app.get('/contact', (req, res) => {
@@ -24,7 +24,12 @@ app.get('/contact', (req, res) => {
 });
 
 app.get('/icons', (req, res) => {
-    res.sendFile(path.join(__dirname, '../../public'));
+    res.sendFile(path.join(__dirname, '../public/icons/'));
+});
+
+
+app.get('/imgs', (req, res) => {
+    res.sendFile(path.join(__dirname, '../public/imgs/'));
 });
 
 app.listen(port, () => {

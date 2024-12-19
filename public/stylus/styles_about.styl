@@ -225,7 +225,6 @@ main {
   align-items: center;
   justify-content: center;
   max-width: 75vw;
-  min-height: 70vh;
 }
 
 
@@ -239,8 +238,10 @@ article {
   margin: 3vh 0 2vh;  // top  horizontal  bottom
   box-sizing: border-box;
   border-radius: 5%;
-  min-width 33.333vw;
-  min-height: 60vh;
+  min-width 50vw;
+  max-width: 85vw;
+  //width: 50vh;
+  //min-height: 60vh;
   background-color: rgba(148, 116, 93, 0.314);
   & p {
     min-width 85%
@@ -269,8 +270,9 @@ div {
 
 
 footer {
-  margin-block: 1vh 1vh;
-
+  position: absolute;
+  margin-block: 3vh 1vh;
+  bottom: 0;
 }
 
 
@@ -399,9 +401,7 @@ footer {
   h3 {font-size: 4vw;}
   p {font-size: 3.162vw;}
 
-  main {
-    min-height: 60vh;
-  }
+
 
 
   img.icon {
@@ -441,4 +441,8 @@ section {
   }
 
 
+}
+
+article {
+  flex: 0 5 50vw;
 }

@@ -51,17 +51,24 @@ h2 {
   }
 }
 h3 {
-  font-size: 2.23606797749979vw;
+
+  font-size: 2.645751311064591vw;
+  font-weight: 500;
   margin-block: 0 1vw; 
-}
-p {
-  font-size: 2.236vw;
-  margin: 0;
+
   &.motto {
     font-size:  2vw;
     margin-block: -1% 1.5%;
     color: #876653;
   }
+}
+h4 {
+  font-size: 2.23606797749979vw;
+  margin: 0;
+}
+p {
+  font-size: 2.236vw;
+  margin: 0;
   &.us {
     width: 75%;
     font-size: 2vw;    
@@ -132,7 +139,7 @@ a.Logo.row {
 img.LogoCE {
   
   width: 8.062vw;
-  border-radius: 20%;
+  border-radius: 8.66%;
   margin: 0;
   transition: all 0.346s ease-out;
 
@@ -209,7 +216,7 @@ ul {
 main {
   flex: 1
   display: inline-block;
-  width: 90vw;
+  //width: 90vw;
 }
 
 div {
@@ -231,16 +238,16 @@ div {
 }
 
 .articleContainer article:nth-child(2n+1) {
-    order: 1; /* Asegura que los artículos estén centrados adecuadamente */
+  order: 1; /* Asegura que los artículos estén centrados adecuadamente */
 }
 
 .articleContainer article:nth-child(2n) {
-    order: 2; /* Asegura que los artículos estén centrados adecuadamente */
+  order: 2; /* Asegura que los artículos estén centrados adecuadamente */
 }
 
 article {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   width: 20vw;
   align-items: center;
   text-align: center;
@@ -262,6 +269,8 @@ article {
 
 footer {
   margin-block: auto 1vh;  
+  position: relative;
+  bottom: 0;
 }
 
 
@@ -333,7 +342,7 @@ footer {
     -o-transform: scale(1, 0);
   }
   header {
-    margin-block: 10px 5vh;
+    //margin-block: 10px 5vh;
     width: 75vw;
   }
 
@@ -365,23 +374,20 @@ footer {
   h2.LogoCE {font-size: 3.162vw;}
 
   a.Logo.row:hover {
-
     img.LogoCE {width: 15vw;}
     h2.LogoCE {font-size: 3.4641vw;}
-
   }
 
 
   nav a {
-
     font-size: 3.872vmax;
     &::after {background-color: #352017;}
-    
   }
 
   h1 {font-size: 5vw;}
   h2 {font-size: 4.691vw;}
-  h3 {font-size: 4vw;}
+  h3 {font-size: 4vw}
+  h4 {font-size: 4vw}
   p {font-size: 3.162vw;}
 
   footer & {color: #A2876F}
@@ -427,4 +433,8 @@ section {
   }
 
 
+}
+
+body, main {
+  width: 85vw;
 }

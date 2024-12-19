@@ -209,6 +209,8 @@ div.contact {
 }
 footer {
   margin-block: 1vh 1vh;
+  position: relative;
+  bottom: 0;
 }
 /*
 --------------------------------------------------------------------

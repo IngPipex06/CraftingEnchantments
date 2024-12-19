@@ -39,17 +39,22 @@ h2.LogoCE {
   transition: all 0.346s ease-out;
 }
 h3 {
-  font-size: 2.23606797749979vw;
+  font-size: 2.645751311064591vw;
+  font-weight: 500;
   margin-block: 0 1vw;
+}
+h3.motto {
+  font-size: 2vw;
+  margin-block: -1% 1.5%;
+  color: #876653;
+}
+h4 {
+  font-size: 2.23606797749979vw;
+  margin: 0;
 }
 p {
   font-size: 2.236vw;
   margin: 0;
-}
-p.motto {
-  font-size: 2vw;
-  margin-block: -1% 1.5%;
-  color: #876653;
 }
 p.us {
   width: 75%;
@@ -107,7 +112,7 @@ a.Logo.row:hover h2.LogoCE {
 }
 img.LogoCE {
   width: 8.062vw;
-  border-radius: 20%;
+  border-radius: 8.66%;
   margin: 0;
   transition: all 0.346s ease-out;
 }
@@ -169,7 +174,6 @@ ul {
 main {
   flex: 1;
   display: inline-block;
-  width: 90vw;
 }
 div {
   display: grid;
@@ -192,7 +196,7 @@ div.articleContainer {
 }
 article {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   width: 20vw;
   align-items: center;
   text-align: center;
@@ -211,6 +215,8 @@ article {
 }
 footer {
   margin-block: auto 1vh;
+  position: relative;
+  bottom: 0;
 }
 /*
 --------------------------------------------------------------------
@@ -273,7 +279,6 @@ footer {
     -o-transform: scale(1, 0);
   }
   header {
-    margin-block: 10px 5vh;
     width: 75vw;
   }
   .navigation.active {
@@ -326,6 +331,9 @@ footer {
   h3 {
     font-size: 4vw;
   }
+  h4 {
+    font-size: 4vw;
+  }
   p {
     font-size: 3.162vw;
   }
@@ -365,4 +373,8 @@ section.welcome {
 }
 section.section {
   min-height: 25vh;
+}
+body,
+main {
+  width: 85vw;
 }
