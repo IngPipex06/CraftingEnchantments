@@ -43,11 +43,6 @@ h3 {
   font-weight: 500;
   margin-block: 0 1vw;
 }
-h3.motto {
-  font-size: 2vw;
-  margin-block: -1% 1.5%;
-  color: #876653;
-}
 h4 {
   font-size: 2.23606797749979vw;
   margin: 0;
@@ -55,6 +50,11 @@ h4 {
 p {
   font-size: 2.236vw;
   margin: 0;
+}
+p.motto {
+  font-size: 2vw;
+  margin-block: -1% 1.5%;
+  color: #876653;
 }
 p.us {
   width: 75%;
