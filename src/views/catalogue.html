@@ -4,6 +4,7 @@
 <head>
 	<title>Crafting Enchantments | Catálogo</title>
     <link rel="stylesheet" href="css/styles_products.css">
+    <link rel="stylesheet" href="../../public/css/styles_products.css">
     <meta property="og:site_name" content="Crafting Enchantments">
     <link rel="canonical" href="https://crafting-enchantments.vercel.app/">
     <meta charset="UTF-8">
@@ -95,34 +96,39 @@
 		<h2>Anchetas</h2>
 
 		<div class="anchetas articleContainer">
-			<article>
+			<article class="product" data-name="Navideñas" data-price="35000" data-img="/imgs/anchetas/anchetaNavidad.jpg">
 				<h3>Navideñas</h3>
-				<img src="/imgs/anchetas/anchetaNavidad.jpg" alt="Ancheta Navideña" class="catalogueImg" loading="lazy" width="150vw">
+				<img src="/imgs/anchetas/anchetaNavidad.jpg" alt="Ancheta Navideña" class="catalogueImg" loading="lazy" style="width:18.708vw">
 				<p class="price">$35,000</p>
+        <button onclick="addToCart(this)">Agregar</button>
 				<!-- <button aria-label="Volver" class="Volver Button" tabindex="-1"><div class=" button"></div></button>
 				<button aria-label="Siguiente" class="Siguiente Button" tabindex="-1"><div class=" button"></div></button> -->
 			</article>
-			<article>
+			<article class="product" data-name="Cumpleaños" data-price="40000" data-img="/imgs/anchetas/anchetaCumple.jpg">
 				<h3>Cumpleaños</h3>
-				<img src="/imgs/anchetas/anchetaCumple.jpg" alt="Ancheta Cumpleaños" class="catalogueImg" loading="lazy" width="150vw">
+				<img src="/imgs/anchetas/anchetaCumple.jpg" alt="Ancheta Cumpleaños" class="catalogueImg" loading="lazy" style="width:18.708vw">
 				<p class="price">$40,000</p>
+        <button onclick="addToCart(this)">Agregar</button>
 				<!-- <button aria-label="Volver" class="Volver Button" tabindex="-1"><div class=" button"></div></button>
 				<button aria-label="Siguiente" class="Siguiente Button" tabindex="-1"><div class=" button"></div></button> -->
 			</article>
-			<article>
+			<article class="product" data-name="Empresariales" data-price="20000" data-img="/imgs/anchetas/anchetaEmpresarial.jpg">
 				<h3>Empresariales</h3>
-				<img src="/imgs//anchetas/anchetaEmpresarial.jpg" alt="Ancheta Empresarial" class="catalogueImg" loading="lazy" width="150vw">
+				<img src="/imgs//anchetas/anchetaEmpresarial.jpg" alt="Ancheta Empresarial" class="catalogueImg" loading="lazy" style="width:18.708vw">
 				<p class="price">$20,000</p>
+        <button onclick="addToCart(this)">Agregar</button>
 				<!-- <button aria-label="Volver" class="Volver Button" tabindex="-1"><div class=" button"></div></button>
 				<button aria-label="Siguiente" class="Siguiente Button" tabindex="-1"><div class=" button"></div></button> -->
 			</article>
-<!-- 			<article>
+      <!-- 			<article>
 				<h3>Amor y Amistad</h3>
-				<img src="/imgs/anchetaAmorAmistad.jpeg" alt="Ancheta Amor y Amistad" class="catalogueImg" loading="lazy" width="150vw">
+				<img src="/imgs/anchetaAmorAmistad.jpeg" alt="Ancheta Amor y Amistad" class="catalogueImg" loading="lazy" style="width:18.708vw">
 				<p class="price">$55,000</p>
 			</article> -->
 
 		</div>
+
+    <button onclick="finalizarCompra()">Finalizar Compra</button>
 
 	</section>
 
@@ -133,27 +139,62 @@
 		<div class="detalles articleContainer">
 			<article>
 				<h3>Carta Vintage</h3>
-				<img src="/imgs/detalles/cartaVintage.jpg" alt="Carta con Estilo Antiguo o Vintage" class="catalogueImg" loading="lazy" width="150vw">
+        <div class="imgContainer">
+          <figure>
+            <img src="/imgs/detalles/cartaVintage.jpg" alt="Carta con Estilo Antiguo o Vintage" class="catalogueImg" loading="lazy" style="width:18.708vw">
+          </figure>
+          <div class="carouselButtons">
+            <button class="prev" type="button"> &lt; </button>
+            <button class="next" type="button"> &gt; </button>
+          </div>
+          <ul class="carouselDots">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
 				<p class="price">$60,000</p>
 			</article>
 			<article>
 				<h3>Carta de Cumpleaños</h3>
-				<img src="/imgs/detalles/felizCumpleHijo.jpg" alt="Carta para Cumpleaños" class="catalogueImg" loading="lazy" width="150vw">
-				<p class="price">$60,000</p>
+        <div class="carousel">
+          <div class="carouselList">
+            <figure class="carouselItem">
+              <img src="/imgs/detalles/felizCumpleHijo.jpg" alt="Carta para Cumpleaños" class="catalogueImg" loading="lazy" style="width:100%">
+            </figure>
+            <figure class="carouselItem">
+                <img src="/imgs/detalles/felizCumpleHijo2.jpg" alt="Carta para cumpleaños" class="catalogueImg" loading="lazy" style="width:100%">
+            </figure>
+            <figure class="carouselItem">
+              <img src="/imgs/detalles/sophie.jpg" alt="Carta para cumpleaños" class="catalogueImg" loading="lazy"  style="width:100%">
+            </figure>
+          </div>
+          <div class="carouselButtons">
+            <button class="prev" type="button"> &lt; </button>
+            <button class="next" type="button"> &gt; </button>
+          </div>
+          <ul class="carouselDots">
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+          <p class="price">$60,000</p>
+
 			</article>
 			<article>
 				<h3>Ramo de Corazón</h3>
-				<img src="/imgs/detalles/corazonFlor.jpg" alt="Ramo de Corazón" class="catalogueImg" loading="lazy" width="150vw">
+				<img src="/imgs/detalles/corazonFlor.jpg" alt="Ramo de Corazón" class="catalogueImg" loading="lazy"  style="width:18.708vw">
 				<p class="price">$60,000</p>
 			</article>
 			<article>
 				<h3>Dibujo</h3>
-				<img src="/imgs/detalles/sophie.jpg" alt="Carta con Estilo Antiguo " class="catalogueImg" loading="lazy" width="150vw">
+				<img src="/imgs/detalles/sophie.jpg" alt="Carta con Estilo Antiguo " class="catalogueImg" loading="lazy" style="width:18.708vw">
 				<p class="price">$60,000</p>
 			</article>
 			<article>
 				<h3>Carta con Dibujo</h3>
-				<img src="/imgs/detalles/howlSophie.jpg" alt="Ramo de Corazón" class="catalogueImg" loading="lazy" width="150vw">
+				<img src="/imgs/detalles/howlSophie.jpg" alt="Ramo de Corazón" class="catalogueImg" loading="lazy" style="width:18.708vw">
 				<p class="price">$60,000</p>
 			</article>
 		</div>
@@ -166,27 +207,27 @@
 		<div class="arcilla articleContainer">
 			<article>
 				<h3>Soporte de Pinceles</h3>
-				<img src="/imgs/arcilla/resposaPinceles.jpg" alt="Resposa Pinceles" class="catalogueImg" loading="lazy" width="150vw">
+				<img src="/imgs/arcilla/resposaPinceles.jpg" alt="Resposa Pinceles" class="catalogueImg" loading="lazy" style="width:18.708vw">
 				<p class="price">$60,000</p>
 			</article>
 			<article>
 				<h3>Gato / Sirena</h3>
-				<img src="/imgs/arcilla/gatoSirena.jpg" alt="Sirena" class="catalogueImg" loading="lazy" width="150vw">
+				<img src="/imgs/arcilla/gatoSirena.jpg" alt="Sirena" class="catalogueImg" loading="lazy" style="width:18.708vw">
 				<p class="price">$60,000</p>
 			</article>
 			<article>
 				<h3>Porta Pinceles</h3>
-				<img src="/imgs/arcilla/gatoPortaLapices.jpg" alt="Porta Pinceles" class="catalogueImg" loading="lazy" width="150vw">
+				<img src="/imgs/arcilla/gatoPortaLapices.jpg" alt="Porta Pinceles" class="catalogueImg" loading="lazy" style="width:18.708vw">
 				<p class="price">$60,000</p>
 			</article>
 			<article>
 				<h3>Vasija</h3>
-				<img src="/imgs/arcilla/totoroVasija.jpg" alt="Totoro" class="catalogueImg" loading="lazy" width="150vw">
+				<img src="/imgs/arcilla/totoroVasija.jpg" alt="Totoro" class="catalogueImg" loading="lazy" style="width:18.708vw">
 				<p class="price">$60,000</p>
 			</article>
 			<article>
 				<h3>Separador de Páginas</h3>
-				<img src="/imgs/arcilla/separadorLibros.jpg" alt="Separador de Páginas" class="catalogueImg" loading="lazy" width="150vw">
+				<img src="/imgs/arcilla/separadorLibros.jpg" alt="Separador de Páginas" class="catalogueImg" loading="lazy" style="width:18.708vw">
 				<p class="price">$60,000</p>
 			</article>
 		</div>
@@ -200,12 +241,12 @@
 		<div class="crochet articleContainer">
 			<article>
 				<h3>Bufandas</h3>
-				<img src="/imgs/crochet/bufanda.jpg" alt="Bufandas" class="catalogueImg" loading="lazy" width="150vw">
+				<img src="/imgs/crochet/bufanda.jpg" alt="Bufandas" class="catalogueImg" loading="lazy" style="width:18.708vw">
 				<p class="price">$60,000</p>
 			</article>
 			<article>
 				<h3>Flores</h3>
-				<img src="/imgs/crochet/flores.jpg" alt="" class="catalogueImg" loading="lazy" width="150vw">
+				<img src="/imgs/crochet/flores.jpg" alt="" class="catalogueImg" loading="lazy" style="width:18.708vw">
 				<p class="price">$60,000</p>
 			</article>
 		</div>
@@ -221,5 +262,7 @@
 </footer>
 
 <script src="JavaScript/button.js"></script>
+<script src="JavaScript/media.js"></script>
+<script src="../carrito.js"></script>
 </body>
 </html>

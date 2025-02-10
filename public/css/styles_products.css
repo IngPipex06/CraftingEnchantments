@@ -165,7 +165,9 @@ ul {
 /*
 --------------------------------------------------------------------
 
+
                       ¡¡¡¡¡MAIN!!!!! 
+
 
 --------------------------------------------------------------------
 */
@@ -175,12 +177,9 @@ main {
   width: 90vw;
 }
 div {
-  display: grid;
-  justify-content: space-around;
-  place-items: center;
+  display: flex;
 }
 div.articleContainer {
-  display: flex;
   width: 100%;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -211,6 +210,7 @@ article {
   display: flex;
   justify-content: center;
   width: 20vw;
+  max-height: 33.333vw;
   align-items: center;
   text-align: center;
   flex-direction: column;
@@ -219,12 +219,69 @@ article {
   border-radius: 5%;
   background-color: rgba(148,116,93,0.314);
   aspect-ratio: 9/13;
+  position: relative;
 }
 .catalogueImg {
   width: 18.708vw;
   aspect-ratio: 3/4;
   object-fit: cover;
   border-radius: 5%;
+}
+.carousel {
+  display: flex;
+  width: 18.708vw;
+  height: 24.944vw;
+  overflow: hidden;
+  position: relative;
+  overflow: hidden;
+}
+.carousel figure {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  margin: 0;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+}
+.carousel .carouselList {
+  display: flex;
+}
+.carouselList {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+  flex-direction: row;
+  position: absolute;
+  width: max-content;
+}
+.carouselButtons {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5%;
+  width: 90%;
+  justify-content: space-between;
+  overflow: visible;
+  scroll-behavior: none;
+}
+.carouselButtons button {
+  all: unset;
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 1.46557vw;
+  height: 1.46557vw;
+  background-color: rgba(255,255,255,0.333);
+  color: #fff;
+  border: none;
+  font-family: monospace, monospace;
+  font-weight: bold;
+  cursor: pointer;
 }
 footer {
   margin-block: auto 1vh;
