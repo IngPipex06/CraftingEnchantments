@@ -1,0 +1,48 @@
+[
+  {
+    "name": "Carta Vintage",
+    "numberOfImgs": 1,
+    "images": [
+      { "src": "imgs/detalles/cartaVintage.jpg", "alt": "Carta Vintage" }
+    ],
+    "price": 0,
+    "description": "Una carta vintage hecha a mano."
+  },
+  {
+    "name": "Carta de Cumpleaños",
+    "numberOfImgs": 2,
+    "images": [
+      { "src": "imgs/detalles/felizCumpleHijo.jpg", "alt": "Carta de Cumpleaños" },
+      { "src": "imgs/detalles/felizCumpleHijo2.jpg", "alt": "Carta de Cumpleaños" }
+    ],
+    "price": 0,
+    "description": "Una carta de cumpleaños personalizada."
+  },
+  {
+    "name": "Ramo de Corazón",
+    "numberOfImgs": 1,
+    "images": [
+      { "src": "imgs/detalles/corazonFlor.jpg", "alt": "Ramo de Corazón" }
+    ],
+    "price": 0,
+    "description": "Un ramo de flores en forma de corazón."
+  },
+  {
+    "name": "Dibujos",
+    "numberOfImgs": 1,
+    "images": [
+      { "src": "imgs/detalles/sophie.jpg", "alt": "Dibujos" }
+    ],
+    "price": 0,
+    "description": "Dibujos artísticos personalizados."
+  },
+  {
+    "name": "Carta con Dibujo",
+    "numberOfImgs": 1,
+    "images": [
+      { "src": "imgs/detalles/howlSophie.jpg", "alt": "Carta con Dibujo" }
+    ],
+    "price": 0,
+    "description": "Una carta con un dibujo personalizado."
+  }
+]

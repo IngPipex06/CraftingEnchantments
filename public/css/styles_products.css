@@ -56,7 +56,6 @@ p.motto {
 p.price {
   color: transparent;
   font-size: 2vw;
-color
 }
 footer p {
   color: #a2876f;
@@ -231,7 +230,6 @@ article {
   display: flex;
   width: 18.708vw;
   height: 24.944vw;
-  overflow: hidden;
   position: relative;
   overflow: hidden;
 }

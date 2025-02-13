@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Navideñas",
+    "numberOfImgs": 1,
+    "images": [
+      { "src": "/imgs/anchetas/anchetaNavidad.jpg", "alt": "Navideñas" }
+    ],
+    "price": 0,
+    "description": "Anchetas navideñas personalizadas."
+  },
+  {
+    "name": "Cumpleaños",
+    "numberOfImgs": 2,
+    "images": [
+      { "src": "/imgs/anchetas/anchetaCumple2.jpg", "alt": "Cumpleaños" },
+      { "src": "/imgs/anchetas/anchetaCumple.jpg", "alt": "Cumpleaños" }
+    ],
+    "price": 0,
+    "description": "Anchetas de cumpleaños personalizadas."
+  },
+  {
+    "name": "Empresariales",
+    "numberOfImgs": 2,
+    "images": [
+      { "src": "/imgs/anchetas/anchetaEmpresarial.jpg", "alt": "Empresariales" },
+      { "src": "/imgs/anchetas/anchetaEmpresarial2.jpg", "alt": "Empresariales" }
+    ],
+    "price": 0,
+    "description": "Anchetas empresariales personalizadas."
+  }
+]

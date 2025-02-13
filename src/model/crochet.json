@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Bufandas",
+    "numberOfImgs": 1,
+    "images": [
+      { "src": "imgs/crochet/bufanda.jpg", "alt": "Bufandas" }
+    ],
+    "price": 0,
+    "description": "Bufandas tejidas a mano."
+  },
+  {
+    "name": "Flores",
+    "numberOfImgs": 1,
+    "images": [
+      { "src": "imgs/crochet/flores.jpg", "alt": "Flores" }
+    ],
+    "price": 0,
+    "description": "Flores de crochet hechas a mano."
+  }
+]

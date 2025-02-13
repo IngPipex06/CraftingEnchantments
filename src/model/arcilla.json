@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Soporte de Pinceles",
+    "numberOfImgs": 1,
+    "images": [
+      { "src": "imgs/arcilla/resposaPinceles.jpg", "alt": "Soporte de Pinceles" }
+    ],
+    "price": 0,
+    "description": "Soporte de pinceles hecho a mano."
+  },
+  {
+    "name": "Gato/Sirena",
+    "numberOfImgs": 1,
+    "images": [
+      { "src": "imgs/arcilla/gatoSirena.jpg", "alt": "Gato/Sirena" }
+    ],
+    "price": 0,
+    "description": "Figura de gato sirena hecha a mano."
+  },
+  {
+    "name": "Porta Lápices",
+    "numberOfImgs": 1,
+    "images": [
+      { "src": "imgs/arcilla/gatoPortaLapices.jpg", "alt": "Porta Lápices" }
+    ],
+    "price": 0,
+    "description": "Porta lápices hecho a mano."
+  },
+  {
+    "name": "Vasija",
+    "numberOfImgs": 1,
+    "images": [
+      { "src": "imgs/arcilla/totoroVasija.jpg", "alt": "Vasija" }
+    ],
+    "price": 0,
+    "description": "Vasija hecha a mano."
+  },
+  {
+    "name": "Separador de Páginas",
+    "numberOfImgs": 1,
+    "images": [
+      { "src": "imgs/arcilla/separadorLibros.jpg", "alt": "Separador de Páginas" }
+    ],
+    "price": 0,
+    "description": "Separador de páginas hecho a mano."
+  }
+]
