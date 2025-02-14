@@ -11,7 +11,6 @@
     <meta name="author" content="Crafting Enchantments">
     <meta name="country" content="COL">
     <meta name="currency" content="COP">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="canonical" href="https://crafting-enchantments.vercel.app/">
       <!-- Open Graph -->
     <meta property="og:site_name" content="Crafting Enchantments">
@@ -60,8 +59,9 @@
     <script>
       window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
     </script>
-    <script defer src="/_vercel/speed-insights/script.js"></script>
-    <link rel="stylesheet" href="/css/styles_products.css">
+    <!-- <script type="module" defer src="/_vercel/speed-insights/script.js"></script> -->
+    <link rel="stylesheet" href="/css/styles.css">
+
   </head>
 
 
@@ -76,7 +76,7 @@
     <div class="toggleMenu" onclick="toggleMenu();"><!-- --- --></div>
     <nav class="navigation row">
       <ul>
-        <li> <a href="./catalogue.html">Mira el catálogo</a> </li>
+        <li> <a href="/catalogo">Mira el catálogo</a> </li>
         <li> <a href="/contacto">Contáctame</a> </li>
         <li> <a href="/acerca">Sobre mí</a> </li>
       </ul>
@@ -143,9 +143,9 @@
   </footer>
 
 
-  <script src="../scripts/server.js"></script>
-  <script src="/JavaScript/buttons.js"></script>
-  <script src="/JavaScript/media.js"></script>
+  <script type="module" src="../scripts/app.js"></script>
+  <script type="module" src="../../public/JavaScript/buttons.js"></script>
+  <script type="module" src="../../public/JavaScript/media.js"></script>
 
 </body>
 

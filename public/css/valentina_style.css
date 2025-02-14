@@ -1,0 +1,54 @@
+body, html {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #fbe9e7 0%, #f8cfcf 25%, #f4b8b8 50%, #f8cfcf 75%, #fbe9e7 100%);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin: 2.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 45vw;
+  height: 100%;
+}
+
+.btn {
+  position: absolute;
+  padding: 5vw 7vw;
+  font-size: 16px;
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.2s ease-in-out;
+  height: 0.1px;
+
+
+
+}
+
+video {
+  width: 80vw;
+  max-height: 75vw;
+}
+
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 25vh;
+}
+
+
+

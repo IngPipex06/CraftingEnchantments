@@ -10,8 +10,8 @@ function Header() {
       <nav className="navigation row">
         <ul>
           <li> <a href="/">Inicio</a> </li>
-          <li> <a href="/contact">Contáctame</a> </li>
-          <li> <a href="/about">Sobre mí</a> </li>
+          <li> <a href="/contacto">Contáctame</a> </li>
+          <li> <a href="/acerca">Sobre mí</a> </li>
         </ul>
       </nav>
 

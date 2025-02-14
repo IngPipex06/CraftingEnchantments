@@ -1,16 +1,16 @@
 {
-    "name": "proyecto",
-    "version": 2,
-    "builds": [
-      {
-        "src": "src/script.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "rewrites": [
-      {
-        "source": "/(.*)",
-        "destination": "src/script.js"
-      }
-    ]
+  "name": "proyecto",
+  "version": 2,
+  "builds": [
+    {
+      "src": "src/scripts/app.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "src/scripts/app.js"
+    }
+  ]
 }
