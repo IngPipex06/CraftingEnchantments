@@ -1,16 +1,20 @@
 {
-  "name": "proyecto",
   "version": 2,
   "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
+    },
     {
       "src": "src/scripts/app.js",
       "use": "@vercel/node"
     }
   ],
-  "rewrites": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "src/scripts/app.js"
+      "src": "/(.*)",
+      "dest": "src/scripts/app.js"
     }
   ]
 }
